@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
+    <title>Srimali Fashions</title>
+
+</head>
+
+<body>
+    <div style="border-radius: 50%;">
+        <header>
+            <img src="Images/logo.jpg" alt="Website Logo" class="logo">
+            <h1 class="header-text">Srimali Fashions</h1>
+        </header>
+    </div>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="index.html">New Arrivals</a></li>
+                <li><a href="mens.html">Mens</a></li>
+                <li><a href="lady.html">Ladies</a></li>
+                <li><a href="kids.html">Kids</a></li>
+                <li><a href="other.html">Accesories</a></li>
+                <li><a href="promotion.html">Promotions</a></li>
+                <li><a href="about.html">About</a></li>   
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="carousel">
+            <img src="Images/Slides/s1.jpg" class="slide" />
+            <img src="Images/Slides/s2.webp" class="slide" />
+            <img src="Images/Slides/s3.jpg" class="slide" />
+            <img src="Images/Slides/s4.webp" class="slide" />
+            <img src="Images/Slides/s5.avif" class="slide" />
+            <img src="Images/Slides/s6.webp" class="slide" />
+            <img src="Images/Slides/s7.jpg" class="slide" />
+            <img src="Images/Slides/s8.jpg" class="slide" />
+            <img src="Images/Slides/s9.jpg" class="slide" />
+            <img src="Images/Slides/s10.jpg" class="slide" />
+          </div>
+
+          <div class="Des">
+            <div>
+                <h2>
+                    Srimali Fashions:  A Haven for Fashion Enthusiasts in Unawatuna
+                </h2>
+                <p>
+                    Nestled in the vibrant streets of Unawatuna, Sri Lanka, Srimali Fashions stands as an epitome of style, elegance, and tradition. This bustling clothing shop has become a beloved destination for locals and tourists alike, offering a mesmerizing array of attire that reflects the rich cultural heritage of the island nation.
+                </p>
+            </div>
+            <div>
+                <h3>
+                    History and Legacy
+                </h3>
+                <p>
+                    Established several decades ago by the visionary entrepreneur, Mrs. Srimali Perera, Srimali Fashions has evolved into a cornerstone of the local fashion scene. What began as a modest boutique has flourished into a sprawling emporium, renowned for its exquisite craftsmanship and timeless designs.
+                </p>
+            </div>
+            <div>
+                <h3>
+                    Location and Ambiance
+                </h3>
+                <p>
+                    Situated in the heart of Unawatuna, Srimali Fashions beckons visitors with its inviting storefront adorned with vibrant displays of fabrics and garments. The shop's ambiance exudes warmth and sophistication, creating a welcoming atmosphere for customers to explore and indulge in their sartorial desires.
+                </p>
+            </div>
+            <div>
+                <h3>
+                    Collections and Offerings
+                </h3>
+                <p>
+                    Step inside Srimali Fashions, and you're greeted with a treasure trove of fashion delights. The shop boasts an extensive collection of attire ranging from traditional saris and sarongs to contemporary western wear. Each garment is meticulously crafted using premium fabrics and adorned with intricate embellishments, showcasing the finest craftsmanship of local artisans
+                    <br>For those seeking traditional attire, Srimali Fashions offers an exquisite selection of saris, salwar kameez, and kurta sets, featuring intricate embroidery and embellishments inspired by Sri Lanka's rich cultural heritage. The shop also caters to modern fashionistas with its trendy collection of dresses, tops, and bottoms, crafted to embody the latest trends in global fashion.
+                </p>
+            </div>
+            <div>
+                <h3>
+                    Customer Experience
+                </h3>
+                <p>
+                    At Srimali Fashions, customer satisfaction reigns supreme. The shop's dedicated staff members possess an innate understanding of fashion and are committed to providing personalized assistance to every shopper. Whether you're in search of the perfect outfit for a special occasion or seeking fashion advice, the knowledgeable team at Srimali Fashions is always on hand to cater to your needs.
+                </p>
+            </div>
+            <div>
+                <h3>
+                    Community Engagement and Sustainability
+                </h3>
+                <p>
+                    Beyond its role as a premier fashion destination, Srimali Fashions is deeply committed to supporting the local community and promoting sustainable practices. The shop sources its fabrics ethically, prioritizing fair trade and environmentally friendly production methods. Additionally, Srimali Fashions actively engages in community outreach programs, providing vocational training and employment opportunities to underprivileged individuals in the region.
+                </p>
+            </div>
+            <div>
+                <h3>
+                    Cultural Influence and Global Recognition
+                </h3>
+                <p>
+                    Over the years, Srimali Fashions has garnered widespread acclaim for its contribution to preserving and promoting Sri Lanka's cultural heritage through fashion. The shop's exquisite designs have captured the attention of fashion enthusiasts around the world, earning it a coveted place on the global stage
+                </p>
+                <p>
+                    In the bustling coastal town of Unawatuna, Srimali Fashions stands as a beacon of style, elegance, and tradition. With its unparalleled collection of attire, commitment to customer satisfaction, and dedication to community engagement, Srimali Fashions continues to reign as a cherished destination for fashion enthusiasts seeking a taste of Sri Lanka's vibrant sartorial heritage. Whether you're a local resident or a traveler exploring the wonders of Sri Lanka, a visit to Srimali Fashions is sure to delight your senses and leave you with cherished memories of exquisite fashion and warm hospitality.
+                </p>
+            </div>
+
+        </div>
+          
+    </div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const slides = document.querySelectorAll('.slide');
+          let currentSlide = 0;
+      
+          function nextSlide() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+          }
+      
+          setInterval(nextSlide, 2000); // Change slide every second
+        });
+      </script>
+
+    <footer>
+        <div class="footer-container">
+          <div class="footer-logo">
+            <a href="index.html" class="logo"><img src="Images/logo.jpg" alt="Website Logo" class="logo">  </a>
+          </div>
+          <div class="footer-links">
+            <strong>Location</strong>
+            <ul>
+              <li><a href="#">Srimali Fashions<br/>Matara Road,<br/>Unawatuna<br/>Sri Lanka.</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <strong>Navigate</strong>
+            <ul>
+              <li><a href="index.html">New Arrivals</a></li>
+              <li><a href="mens.html">Mens</a></li>
+              <li><a href="lady.html">Ladies</a></li>
+              <li><a href="kids.html">Kids</a></li>
+              <li><a href="other.html">Accesories</a></li>
+              <li><a href="promotion.html">Promotions</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <strong>Contact</strong>
+            <ul>
+              <li><a href="#">Phone : 077 284 7202</a></li>
+              <li><a href="#">Email : srimalifashions@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+</body>
+</html>

@@ -1,0 +1,276 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+header {
+    background-color:#c2b490; /* Change the background color as needed */
+    color: #fffefe; /* Change the text color as needed */
+    padding: 5px;
+    text-align: center;
+}
+.logo {
+    width: 200px; /* Adjust the width of your logo */
+    height: auto;
+    border-radius: 80%; /* Maintain aspect ratio */
+}
+.header-text {
+    font-size: 52px; /* Adjust the font size of the header text */
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    padding-bottom: 0%;
+}
+nav {
+    background-color: #696a6c; /* Change the background color as needed */
+    padding: 10px 0; /* Adjust padding as needed */
+    text-align: center;
+    position: relative;
+}
+.cart-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px; /* Set the width of the cart icon */
+    height: auto; 
+    border-radius: 50%;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px; /* Adjust spacing between links */
+}
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px; /* Adjust font size as needed */
+}
+nav ul li a:hover {
+    color: #c2b490; /* Change text color on hover */
+}
+.container {
+    max-width: 1920px; /* Adjust container width as needed */
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+    background-color: #ffffff; /* Add padding around the content */
+}
+
+/*footer section*/
+footer{
+    background-color: #c2b490;
+    padding: 50px 20px;
+    border-top: 5px solid #4eb060;
+}
+.footer-container{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logo a{
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.footer-logo a span{
+    color: #4eb060;
+}
+.footer-links strong{
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.footer-links ul{
+    list-style-type: none;
+    margin-top: 10px;
+}
+.footer-links ul li a{
+    color: #ffffff;
+    opacity: 0.5;
+    margin: 4px 0px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: all ease 0.3s;
+}
+.footer-links li a:hover{
+    opacity: 1;
+    transition: all ease 0.3s;
+}
+
+/*Sections and cards*/
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.cards {
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.card {
+    width: 400; /* Adjust width based on the calculation */
+    height: auto; /* Set height to auto to accommodate varying content */
+    padding: 40px; /* Add padding around the card */
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Add margin at the bottom to create space between cards */
+    display: inline-block; /* Set display to inline-block to make the cards appear as separate blocks */
+    margin: 20px;
+}
+
+
+.card:last-child {
+    margin-right: 50px; /* Remove margin from the last card to prevent extra spacing */
+}
+
+
+.card img {
+    width: 350px; /* Set width to 100% to fill the container */ 
+    object-fit: cover; /* Maintain aspect ratio and crop if necessary */
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    height:500px
+}
+
+.card h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.card button {
+    background-color: #51e2f5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.card button:hover {
+    background-color: #2d98af;
+}
+
+/*Promotion Cards*/
+.promotion-card {
+    display: flex;
+    width: 1400px; /* Adjust width as needed */
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .promotion-card img {
+    width: 10%; /* Adjust width of the image */
+    border-radius: 10px 0 0 10px;
+  }
+  
+  .promotion-details {
+    flex: 1;
+    padding: 0 20px; /* Adjust padding as needed */
+  }
+  
+  .promotion-details h2 {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  
+  .promotion-details p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .promotion-details .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .promotion-details .btn:hover {
+    background-color: #0056b3;
+  }
+
+  /*Image Slides*/
+  .carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .slide {
+    display: none;
+    width: 100%;
+    height: 500px;
+  }
+  
+  .slide.active {
+    display: block;
+  }
+  
+  /*Des*/
+  .Des {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Heading styles */
+  .Des h2 {
+    color: #c3aa0a; 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 48px;
+  }
+  
+  .Des h3 {
+    color: #555;
+    font-size: 36px; /* Sub-heading color */
+  }
+  
+  /* Paragraph styles */
+  .Des p {
+    color: #666; /* Paragraph text color */
+    line-height: 1.6;
+    font-size: 20px;
+  }
+  
+  /* Adding some spacing between sections */
+  div:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  
